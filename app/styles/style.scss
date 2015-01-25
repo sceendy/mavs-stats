@@ -1,4 +1,5 @@
 $icon-font-path: "../styles/fonts/";
+
 @import url(http://fonts.googleapis.com/css?family=Patua+One);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400);
 
@@ -30,7 +31,8 @@ html, body {
 
 .site-name {
   font-family: $heading-font;
-  margin: 10px 0;
+  margin: 0;
+  line-height: 65px;
   &:hover {
     cursor: pointer;
   }
@@ -49,6 +51,7 @@ h2, h3, h4, h5, h6 {
   color: #fff;
   font-weight: 700;
   padding: 15px 0;
+  margin: 0;
 }
 
 .roster-number {
@@ -57,19 +60,23 @@ h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.navigation {
+ul.navigation {
+  margin: 0;
+  text-align: right;
   .nav-item {
     list-style-type: none;
     display: inline-block;
     padding: 5px 15px;
-    line-height: 20px;
-    float: right;
-    &:active {
+    line-height: 65px;
+    &.active {
       background: $dark-blue;
     }
     &:hover {
       cursor: pointer;
     }
+  }
+  @media screen and (max-width: 767px){
+    display: none;
   }
 }
 
@@ -151,4 +158,11 @@ code {
   margin-bottom:40px;
   font-weight: 700;
   color: $mavs-blue;
+}
+
+hr {
+  color: $mavs-blue;
+  border-style: dashed;
+  border-width: 1px;
+  width: 100%;
 }

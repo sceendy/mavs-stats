@@ -31,7 +31,7 @@ $bp-namespace-obj: ( (xs), (sm, 48em), (md, 62em), (lg, 75em) ) !default;
 */
 
 $half-gutter: 0.5rem;
-$half-gutter-adjustment: -$half-gutter;
+$half-gutter-adjustment: $half-gutter;
 
 /**
 * Function for fetching column percentage because I don't trust browser rounding.
@@ -63,8 +63,8 @@ $half-gutter-adjustment: -$half-gutter;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /*margin-right: $half-gutter-adjustment;
-  margin-left: $half-gutter-adjustment;*/
+  margin-right: $half-gutter-adjustment;
+  margin-left: $half-gutter-adjustment;
 }
 
 
@@ -86,7 +86,7 @@ $half-gutter-adjustment: -$half-gutter;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 920px;
   margin:0 auto;
 }
 /**
