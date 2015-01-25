@@ -67,8 +67,12 @@ h2, h3, h4, h5, h6 {
   }
 }
 
-.v-space {
+.row-v-space {
   margin: 15px 0;
+  &:hover {
+    cursor: pointer;
+    background: #eee;
+  }
 }
 
 .site-footer {
@@ -129,4 +133,12 @@ code {
     font-size: 13px;
     font-weight: 700;
   }
+}
+
+.text-xl {
+  font-size:9rem;
+  text-align: center;
+  margin-bottom:40px;
+  font-weight: 700;
+  color: $mavs-blue;
 }

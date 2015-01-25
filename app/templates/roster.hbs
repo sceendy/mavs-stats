@@ -1,22 +1,21 @@
 <div class="well">
   <h2>Players</h2>
   {{#each}}
-  <div class="row v-space">
-    <div class="col-md-1">
-      <h3 class="roster-number">
-        {{ number }}
-      </h3>
-    </div>
-    <div class="col-md-6">
-      {{ name }}
-    </div>
-    <div class="col-md-3">
-      {{ position }}
-    </div>
-    <div class="col-md-2">
-      <div class="text-right">{{ years }}</div>
-    </div>
-
-  </div>
+    {{#link-to 'player' this classNames='row row-v-space' tagName='div'}}
+      <div class="col-md-1">
+        <h3 class="roster-number">
+          {{ number }}
+        </h3>
+      </div>
+      <div class="col-md-6">
+        {{ name }}
+      </div>
+      <div class="col-md-3">
+        {{ position }}
+      </div>
+      <div class="col-md-2">
+        <div class="text-right">{{ years }}</div>
+      </div>
+    {{/link-to}}
   {{/each}}
 </div>

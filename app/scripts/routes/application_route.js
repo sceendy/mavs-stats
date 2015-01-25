@@ -9,3 +9,9 @@ Mavsapp.RosterRoute = Ember.Route.extend({
     return Mavsapp.Roster;
   }
 });
+
+Mavsapp.PlayerRoute = Ember.Route.extend({
+  model: function (params) {
+    return Mavsapp.Roster.findBy('number', params.number);
+  }
+});
