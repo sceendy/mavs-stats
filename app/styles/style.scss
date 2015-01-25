@@ -1,0 +1,132 @@
+$icon-font-path: "../styles/fonts/";
+@import url(http://fonts.googleapis.com/css?family=Patua+One);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400);
+
+/* /start/ import for now */
+
+@import "vars";
+@import "mixins";
+@import "grid";
+
+/* /end/ import for now */
+
+html, body {
+  font-family: $main-font;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.nav-bar, .site-footer {
+  background: $mavs-blue;
+  color: #fff;
+}
+
+.nav-bar {
+  margin-bottom: 30px;
+  border-bottom: 1px solid $dark-blue;
+  box-shadow: 0 2px 2px -2px rgba(7, 33, 86, .52);
+}
+
+.site-name {
+  font-family: $heading-font;
+  margin: 10px 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+h2, h3, h4, h5, h6 {
+  color: $dark-blue;
+}
+
+.main {
+  margin-bottom: 30px;
+}
+
+.roster-number {
+  margin: 0;
+  background: #eee;
+  color: $mavs-blue;
+  text-align: center;
+}
+
+.navigation {
+  .nav-item {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 15px;
+    line-height: 20px;
+    float: right;
+    &:active {
+      background: $dark-blue;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.v-space {
+  margin: 15px 0;
+}
+
+.site-footer {
+  padding: 20px 0;
+  border-top: 1px solid $dark-blue;
+  box-shadow: 0 2px 2px 2px rgba(7, 33, 86, .52);
+  width: 100%;
+  a {
+    color: $mid-gray;
+    text-decoration: none;
+  }
+}
+
+code {
+  background: $mid-gray;
+  color: $dark-blue;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.wrap {
+  width: 350px;
+  margin: 0 auto;
+  display: inline-block;
+  float: left;
+}
+
+.progress-radial {
+  margin: 0 auto;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: $dark-blue;
+  display: block;
+}
+
+.progress-radial .overlay {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background-image: url('https://pbs.twimg.com/profile_images/509722829089034241/94B6qXWz_400x400.jpeg');
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-size: cover;
+  &:after {
+    content: '--10%';
+    right: -14px;
+    position: absolute;
+    top: -6px;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+  }
+}

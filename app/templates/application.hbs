@@ -1,0 +1,42 @@
+  <div class="nav-bar">
+    <div class="container">
+      <div class="row">
+        <header class="col-md-6">
+          {{#link-to 'index' tagName='h1' class='site-name'}}Mavs Stats{{/link-to}}
+        </header>
+        <nav class="col-md-6" role="navigation">
+          <ul class="navigation">
+            {{#each item in controller}}
+            {{#link-to 'roster' tagName="li" class="nav-item"}}{{item}}{{/link-to}}
+            {{/each}}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="hero-home">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <article class="col-md-8 main">
+        {{outlet}}
+      </article>
+      <aside class="col-md-4">
+        <h2>//todo</h2>
+        <ul>
+          <li>stuff</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          my site: <a href="http://sceendy.com" target="_blank">www.sceendy.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
