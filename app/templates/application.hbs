@@ -1,14 +1,14 @@
   <div class="nav-bar">
     <div class="container">
       <div class="row">
-        <header class="col-md-6 col-xs-12">
+        <header class="col-md-4 col-xs-12">
           {{#link-to 'index' tagName='h1' class='site-name'}}Mavs Stats{{/link-to}}
         </header>
-        <nav class="col-md-6" role="navigation">
+        <nav class="col-md-8" role="navigation">
           <ul class="navigation">
-            {{#each item in controller}}
-            {{#link-to 'roster' tagName="li" class="nav-item"}}{{item}}{{/link-to}}
-            {{/each}}
+            {{#link-to 'index' tagName="li" class="nav-item"}}Trivia{{/link-to}}
+            {{#link-to 'index' tagName="li" class="nav-item"}}Interactive Predictions{{/link-to}}
+            {{#link-to 'roster' tagName="li" class="nav-item"}}Roster{{/link-to}}
           </ul>
         </nav>
       </div>

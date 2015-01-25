@@ -44,9 +44,15 @@ h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
 }
 
+.roster-heading {
+  background: $mavs-blue;
+  color: #fff;
+  font-weight: 700;
+  padding: 15px 0;
+}
+
 .roster-number {
   margin: 0;
-  background: #eee;
   color: $mavs-blue;
   text-align: center;
 }
@@ -68,7 +74,8 @@ h2, h3, h4, h5, h6 {
 }
 
 .row-v-space {
-  margin: 15px 0;
+  margin: 5px 0;
+  padding: 15px 0;
   &:hover {
     cursor: pointer;
     background: #eee;
@@ -97,6 +104,9 @@ code {
   text-align: right;
 }
 
+.text-center {
+  text-align: center;
+}
 .wrap {
   width: 350px;
   margin: 0 auto;
